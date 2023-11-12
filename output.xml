@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230816 20:15:20.621" rpa="false" schemaversion="4">
+<suite id="s1" name="AppiumProjectAkakçe" source="C:\Users\Kerem\PycharmProjects\AppiumProjectAkakçe">
+<suite id="s1-s1" name="Tests" source="C:\Users\Kerem\PycharmProjects\AppiumProjectAkakçe\Tests">
+<suite id="s1-s1-s1" name="OpenApplication" source="C:\Users\Kerem\PycharmProjects\AppiumProjectAkakçe\Tests\OpenApplication.robot">
+<test id="s1-s1-s1-t1" name="Login Akakce Application" line="18">
+<kw name="Open Akakce Application" library="resources">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=11.0</arg>
+<arg>deviceName=emulator</arg>
+<arg>appPackage=com.akakce.akakce</arg>
+<arg>appActivity=com.akakce.akakce.ui.splash.SplashActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230816 20:15:20.891" endtime="20230816 20:15:28.589"/>
+</kw>
+<status status="PASS" starttime="20230816 20:15:20.891" endtime="20230816 20:15:28.589"/>
+</kw>
+<kw name="Close Pop Up Message" library="resources">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${pop_up_message}</arg>
+<arg>timeout=15</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230816 20:15:38.972" level="INFO">criteria is com.akakce.akakce:id/framePopupLyt
+criteria is com.akakce.akakce:id/framePopupLyt
+criteria is com.akakce.akakce:id/framePopupLyt</msg>
+<status status="PASS" starttime="20230816 20:15:28.591" endtime="20230816 20:15:38.972"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${pop_up_message}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:38.974" level="INFO">Clicking element 'id=com.akakce.akakce:id/framePopupLyt'.</msg>
+<msg timestamp="20230816 20:15:40.070" level="INFO">criteria is com.akakce.akakce:id/framePopupLyt</msg>
+<status status="PASS" starttime="20230816 20:15:38.972" endtime="20230816 20:15:40.070"/>
+</kw>
+<status status="PASS" starttime="20230816 20:15:28.590" endtime="20230816 20:15:40.070"/>
+</kw>
+<kw name="Click On User Icon" library="resources">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${User_Icon}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230816 20:15:40.275" level="INFO">criteria is rightIcon</msg>
+<status status="PASS" starttime="20230816 20:15:40.071" endtime="20230816 20:15:40.275"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${User_Icon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:40.277" level="INFO">Clicking element 'id=rightIcon'.</msg>
+<msg timestamp="20230816 20:15:40.887" level="INFO">criteria is rightIcon</msg>
+<status status="PASS" starttime="20230816 20:15:40.275" endtime="20230816 20:15:40.887"/>
+</kw>
+<status status="PASS" starttime="20230816 20:15:40.071" endtime="20230816 20:15:40.887"/>
+</kw>
+<kw name="Verify Login Page Displayed" library="resources">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${login_button}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230816 20:15:42.040" level="INFO">xpath criteria: //*[@text='Giriş Yap']</msg>
+<status status="PASS" starttime="20230816 20:15:40.887" endtime="20230816 20:15:42.040"/>
+</kw>
+<status status="PASS" starttime="20230816 20:15:40.887" endtime="20230816 20:15:42.040"/>
+</kw>
+<kw name="Click On Hesap Olustur Button" library="resources">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${hesap_olustur}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230816 20:15:42.538" level="INFO">xpath criteria: //*[@text='Hesap Oluştur']</msg>
+<status status="PASS" starttime="20230816 20:15:42.040" endtime="20230816 20:15:42.538"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${hesap_olustur}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:42.540" level="INFO">Clicking element 'xpath=//*[@text='Hesap Oluştur']'.</msg>
+<msg timestamp="20230816 20:15:43.721" level="INFO">xpath criteria: //*[@text='Hesap Oluştur']</msg>
+<status status="PASS" starttime="20230816 20:15:42.539" endtime="20230816 20:15:43.721"/>
+</kw>
+<status status="PASS" starttime="20230816 20:15:42.040" endtime="20230816 20:15:43.721"/>
+</kw>
+<kw name="Enter Register Details" library="resources">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${User_Ad}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230816 20:15:44.806" level="INFO">xpath criteria: //*[@text='Ad']</msg>
+<status status="PASS" starttime="20230816 20:15:43.721" endtime="20230816 20:15:44.806"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${User_Ad}</arg>
+<arg>John</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:44.808" level="INFO">Typing text 'John' into text field 'xpath=//*[@text='Ad']'</msg>
+<msg timestamp="20230816 20:15:46.439" level="INFO">xpath criteria: //*[@text='Ad']</msg>
+<status status="PASS" starttime="20230816 20:15:44.806" endtime="20230816 20:15:46.439"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${User_Soyad}</arg>
+<arg>wick</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:46.441" level="INFO">Typing text 'wick' into text field 'xpath=//*[@text='Soyad']'</msg>
+<msg timestamp="20230816 20:15:48.656" level="INFO">xpath criteria: //*[@text='Soyad']</msg>
+<status status="PASS" starttime="20230816 20:15:46.439" endtime="20230816 20:15:48.656"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${email_input}</arg>
+<arg>j_wick123@example.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:48.658" level="INFO">Typing text 'j_wick123@example.com' into text field 'xpath=(//*[@resource-id='com.akakce.akakce:id/email_edt'])[2]'</msg>
+<msg timestamp="20230816 20:15:50.707" level="INFO">xpath criteria: (//*[@resource-id='com.akakce.akakce:id/email_edt'])[2]</msg>
+<status status="PASS" starttime="20230816 20:15:48.656" endtime="20230816 20:15:50.707"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${email_input2}</arg>
+<arg>j_wick123@example.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:50.709" level="INFO">Typing text 'j_wick123@example.com' into text field 'id=email_ag_edt'</msg>
+<msg timestamp="20230816 20:15:52.904" level="INFO">criteria is email_ag_edt</msg>
+<status status="PASS" starttime="20230816 20:15:50.707" endtime="20230816 20:15:52.904"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${password_input}</arg>
+<arg>Johnwick123!.</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:52.906" level="INFO">Typing text 'Johnwick123!.' into text field 'xpath=(//*[@resource-id='com.akakce.akakce:id/password_edt'])[2]'</msg>
+<msg timestamp="20230816 20:15:54.939" level="INFO">xpath criteria: (//*[@resource-id='com.akakce.akakce:id/password_edt'])[2]</msg>
+<status status="PASS" starttime="20230816 20:15:52.904" endtime="20230816 20:15:54.939"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${password_input2}</arg>
+<arg>Johnwick123!.</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230816 20:15:54.941" level="INFO">Typing text 'Johnwick123!.' into text field 'id=password_ag_edt'</msg>
+<msg timestamp="20230816 20:15:57.121" level="INFO">criteria is password_ag_edt</msg>
+<status status="PASS" starttime="20230816 20:15:54.939" endtime="20230816 20:15:57.121"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230816 20:16:00.122" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230816 20:15:57.121" endtime="20230816 20:16:00.122"/>
+</kw>
+<status status="PASS" starttime="20230816 20:15:43.721" endtime="20230816 20:16:00.122"/>
+</kw>
+<status status="PASS" starttime="20230816 20:15:20.891" endtime="20230816 20:16:00.122"/>
+</test>
+<status status="PASS" starttime="20230816 20:15:20.652" endtime="20230816 20:16:00.123"/>
+</suite>
+<status status="PASS" starttime="20230816 20:15:20.650" endtime="20230816 20:16:00.124"/>
+</suite>
+<status status="PASS" starttime="20230816 20:15:20.623" endtime="20230816 20:16:00.125"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AppiumProjectAkakçe">AppiumProjectAkakçe</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">AppiumProjectAkakçe.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="OpenApplication">AppiumProjectAkakçe.Tests.OpenApplication</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
